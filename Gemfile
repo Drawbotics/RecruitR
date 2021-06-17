@@ -17,10 +17,10 @@ group :development, :test do
 end
 
 group :test do
-  gem 'webmock', '~> 3.11'
-  gem 'simplecov', '~> 0.21.0', require: false
   gem 'rubocop-rails', '~> 2.9', '>= 2.9.1'
   gem 'rubocop-rspec', '~> 2.1'
+  gem 'simplecov', '~> 0.21.0', require: false
+  gem 'webmock', '~> 3.11'
 end
 
 group :development do
@@ -30,3 +30,4 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
