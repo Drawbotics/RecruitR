@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :skill_proficiencies, inverse_of: :user
+  has_many :skill_proficiencies, inverse_of: :user, dependent: :destroy
   has_many :skills, through: :skill_proficiencies
 
   validates :first_name, :email, :last_name, presence: true
