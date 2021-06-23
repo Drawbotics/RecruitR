@@ -13,3 +13,4 @@ module Rateable
     validates :proficiency, inclusion: { in: PROFICIENCIES }, allow_blank: true
   end
 end
+
