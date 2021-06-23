@@ -14,6 +14,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'faker', '~> 2.15', '>= 2.15.1'
   gem 'rspec-rails', '~> 5.0', '>= 5.0.1'
+  gem 'factory_bot_rails', '~> 6.1'
 end
 
 group :test do
