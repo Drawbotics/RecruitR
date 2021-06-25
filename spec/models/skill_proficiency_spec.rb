@@ -5,7 +5,7 @@ RSpec.describe SkillProficiency, type: :model do
   let(:skill) { create(:skill) }
 
   it 'is valid with a proper user, skill and proficiency' do
-    expect(described_class.new(user: user, skill: skill, proficiency: Rateable::PROFICIENCIES.sample)).to be_valid
+    expect(described_class.new(user: user, skill: skill, proficiency: Rateable::LEVEL.sample)).to be_valid
   end
 
   it 'is valid with a nil proficiency' do

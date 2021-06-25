@@ -7,10 +7,10 @@ module Rateable
   ADVANCED = 'advanced'.freeze
   EXPERT = 'expert'.freeze
   PRINCIPAL = 'principal'.freeze
-  PROFICIENCIES = [BEGINNER, PROFICIENT, ADVANCED, EXPERT, PRINCIPAL].freeze
+  LEVEL = [BEGINNER, PROFICIENT, ADVANCED, EXPERT, PRINCIPAL].freeze
 
   included do
-    validates :proficiency, inclusion: { in: PROFICIENCIES }, allow_blank: true
+    validates :proficiency, inclusion: { in: LEVELS }, allow_blank: true
   end
 end
 

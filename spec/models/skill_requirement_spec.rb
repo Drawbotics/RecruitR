@@ -5,7 +5,7 @@ RSpec.describe SkillRequirement, type: :model do
   let(:skill) { create(:skill) }
 
   it 'is valid with a proper position, skill and requirement' do
-    expect(described_class.new(position: position, skill: skill, proficiency: Rateable::PROFICIENCIES.sample)).to be_valid
+    expect(described_class.new(position: position, skill: skill, proficiency: Rateable::LEVEL.sample)).to be_valid
   end
 
   it 'is valid with a nil requirement' do
