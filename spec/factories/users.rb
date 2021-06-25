@@ -8,5 +8,9 @@ FactoryBot.define do
       type { 'Users::Recruiter' }
     end
 
+    factory :candidate, class: Users::Candidate do
+      type { 'Users::Candidate' }
+    end
+
   end
 end

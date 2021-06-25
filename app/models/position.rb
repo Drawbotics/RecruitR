@@ -9,5 +9,9 @@ class Position < ApplicationRecord
 
   validates :name, presence: true
   validates :status, inclusion: { in: STATUS }
+
+  def perfect_matches
+    Users::Candidate.all
+  end
 end
 
